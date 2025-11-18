@@ -15,10 +15,10 @@ git clone https://github.com/EGSans/ExamenFinal_ServiciosTelematicos.git
 
 
 1.2 Levantar la VM con vagrant
-Ejecutar el siguiente comando en la misma ruta del proyect donde se encuentra el Vagrantfile
+Ejecutar el siguiente comando en la misma ruta del proyect donde se encuentra el Vagrantfile:
 vagrant up
 
-Una vez termine de levantar la máquina vagrant podemos acceder a esta mediante
+Una vez termine de levantar la máquina vagrant podemos acceder a esta mediante:
 
 vagrant ssh 
 
