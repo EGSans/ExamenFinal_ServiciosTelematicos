@@ -45,7 +45,8 @@ http://localhost:8080 (como tenemos configurada la redirección de http a https 
 https://localhost:8443 (nuestro sitio https con certificado SSL autofirmado)
 
 
-<img width="1907" height="983" alt="image" src="https://github.com/user-attachments/assets/f0d4d2ec-9f7f-4cc2-9551-29042374ead1" />
+<img width="1912" height="982" alt="image" src="https://github.com/user-attachments/assets/41806402-50fd-4459-925a-7f40dfa0d469" />
+
 
 <img width="693" height="812" alt="image" src="https://github.com/user-attachments/assets/0704978e-3051-4eb0-b47a-aad85d53cbaa" />
 
@@ -54,6 +55,15 @@ https://localhost:8443 (nuestro sitio https con certificado SSL autofirmado)
 
 
 
+2. Despliegue en AWS EC2
+
+   Para este punto se levantó una instancia en AWS con las siguientes características:
+
+   Tipo:t3.micro
+   Sistema: Ubuntu 22.04
+   Reglas de entrada (necesarias para el desarrollo de los puntos 2,3 y 4):
+
+   <img width="973" height="238" alt="image" src="https://github.com/user-attachments/assets/9f531651-a131-4c9c-999d-bf044a836ec6" />
 
 
 
