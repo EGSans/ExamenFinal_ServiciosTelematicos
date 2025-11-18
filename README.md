@@ -66,8 +66,15 @@ https://localhost:8443 (nuestro sitio https con certificado SSL autofirmado)
    <img width="973" height="238" alt="image" src="https://github.com/user-attachments/assets/9f531651-a131-4c9c-999d-bf044a836ec6" />
 
 
+   Recuerda que puedes conectarte a la instancia mediante ssh una vez generado un par de claves ( en el caso de esta guía se utilizó un archivo .pem llamado ExamenFinal.pem):
 
-2.1
+   ejemplo: ssh -i "ExamenFinal.pem" ubuntu@ec2-3-231-224-189.compute-1.amazonaws.com
+
+
+
+2.1 Instalación de Docker dentro de la instancia 
+
+
 
 
 
