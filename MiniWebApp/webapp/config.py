@@ -1,0 +1,8 @@
+class Config:
+    MYSQL_HOST = 'localhost'
+    MYSQL_USER = 'root'
+    MYSQL_PASSWORD = 'root'
+    MYSQL_DB = 'myflaskapp'
+    SQLALCHEMY_DATABASE_URI = 'mysql://root:root@db/myflaskapp'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+

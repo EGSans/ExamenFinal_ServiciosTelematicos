@@ -1,0 +1,9 @@
+ExamenFinal.pem
+*.pem
+.vagrant/
+MiniWebApp/.ssh/
+MiniWebApp/.docker/
+MiniWebApp/.cache/
+MiniWebApp/.local/
+MiniWebApp/.bash*
+MiniWebApp/.profile
