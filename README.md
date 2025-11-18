@@ -5,29 +5,7 @@ El objetivo fue desplegar, asegurar, monitorear y visualizar una aplicación web
 
 Contenido del repositorio:
 
-ExamenFinal_ServiciosTelematicos/
-│
-├── MiniWebApp/                # Proyecto web empaquetado localmente
-│   ├── docker-compose.yml
-│   ├── webapp/ (código Python + Flask)
-│   ├── nginx/default.conf     # SSL + Reverse Proxy
-│   ├── certs/ (certificados SSL)
-│   ├── init.sql               # BD inicial
-│   ├── script.sh              # Provisión para Vagrant
-│   └── Vagrantfile            # Máquina Vagrant para despliegue local
-│
-├── prometheus/                # Config de monitoreo
-│   ├── prometheus.yml
-│   ├── alerts.yml
-│   └── docker-compose.yml
-│
-├── grafana/
-│   └── dashboards/            # Paneles JSON exportados
-│
-├── evidencia/                 # Capturas y pruebas del examen
-│
-├── README.md                  # Este archivo
-└── .gitignore
+<img width="694" height="570" alt="image" src="https://github.com/user-attachments/assets/0ede040e-e8b3-4a0f-b893-6a90fca4f376" />
 
 
 1. Empaquetado y despliegue local con Docker + Nginx + SSL + Vagrant
@@ -41,10 +19,47 @@ Ejecutar el siguiente comando en la misma ruta del proyect donde se encuentra el
 vagrant up
 
 Una vez termine de levantar la máquina vagrant podemos acceder a esta mediante
+
 vagrant ssh 
 
 En el hipervisor de VirtualBox podremos ver la siguiente máquina que corresponde a la que acabamos de levantar
 
 <img width="569" height="81" alt="image" src="https://github.com/user-attachments/assets/87cbdbdc-40a8-4722-9dc0-e8c3be39bc9a" />
+
+
+
+
+1.3 Construir y ejecutar los contenedores
+
+Una vez dentro de la máquina virtual accedemos a la ruta de nuestro proyecto para levantar los contenedores
+
+cd /vagrant/MiniWebApp
+
+docker compose build ( crea las imágenes de los contenedores)
+
+docker compose up -d (levanta los contenedores con las imágenes previamente creadas)
+
+1.4 Acceso desde el navegador (host)
+
+http://localhost:8080 (como tenemos configurada la redirección de http a https en nuestro archivo nginx/default.conf nos enviará directamente a nuestro sitio en el puerto 8443)
+https://localhost:8443 (nuestro sitio https con certificado SSL autofirmado)
+
+
+<img width="1907" height="983" alt="image" src="https://github.com/user-attachments/assets/f0d4d2ec-9f7f-4cc2-9551-29042374ead1" />
+
+<img width="693" height="812" alt="image" src="https://github.com/user-attachments/assets/0704978e-3051-4eb0-b47a-aad85d53cbaa" />
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
